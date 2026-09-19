@@ -2,20 +2,29 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="AVMD-FRANCE — elegant fashion for men and women, curated clothing and footwear.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AVMD-FRANCE — elegant clothing and footwear for men and women.">
   <title>AVMD-FRANCE — Modern Elegance</title>
-  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="announcement">COMPLIMENTARY SHIPPING ON ORDERS OVER $150 <span>•</span> NEW EDIT</div>
+  <div class="announcement">COMPLIMENTARY SHIPPING ON ORDERS OVER $150 <span>•</span> NEW SEASON EDIT</div>
   <header>
-    <a class="brand" href="#top"><img src="assets/avmd-logo.png" alt="AVMD-FRANCE logo"><span>AVMD-FRANCE</span></a>
+    <a class="brand" href="#top"><img src="assets/avmd-logo.png" alt="AVMD-FRANCE logo"></a>
     <nav>
-      <a href="#new">New</a><a href="#men">Men</a><a href="#women">Women</a><a href="#footwear">Footwear</a><a href="#about">Maison</a>
+      <a href="#new">New</a>
+      <a href="#men">Men</a>
+      <a href="#women">Women</a>
+      <a href="#footwear">Footwear</a>
+      <a href="#about">Maison</a>
     </nav>
-    <div class="tools"><button id="searchBtn" aria-label="Search">⌕</button><button id="cartBtn" aria-label="Cart">Bag <b id="cartCount">0</b></button></div>
+    <div class="tools">
+      <button id="searchBtn" aria-label="Search">⌕</button>
+      <button id="cartBtn" aria-label="Cart">Bag <b id="cartCount">0</b></button>
+    </div>
   </header>
 
   <main id="top">
@@ -23,24 +32,26 @@
       <div class="hero-copy">
         <p class="eyebrow">AUTUMN / WINTER 2026</p>
         <h1>Quiet luxury,<br>made wearable.</h1>
-        <p class="lede">A refined edit of tailoring, dresses and footwear for men and women. Parisian restraint, modern proportions.</p>
+        <p class="lede">A refined edit of tailoring, dresses and footwear for men and women. Parisian restraint, clean silhouettes and polished essentials.</p>
         <a class="cta" href="#new">Shop the edit</a>
       </div>
       <div class="hero-art">
-        <img src="https://unsplash.com/photos/Z0xSjrZhmDQ/download?force=true&w=1400" alt="Elegant menswear editorial" onerror="this.style.display='none'">
-        <div class="fallback">AVMD<br><small>PARIS EDIT</small></div>
+        <img src="assets/men_suit.png" alt="Elegant menswear editorial">
       </div>
     </section>
 
     <section class="trust">
-      <div><strong>Curated fashion</strong><span>Elegant essentials & statement pieces</span></div>
-      <div><strong>Responsive design</strong><span>Built for desktop, tablet & mobile</span></div>
-      <div><strong>Transparent pricing</strong><span>Retail prices checked Sep 19, 2026</span></div>
+      <div><strong>Curated fashion</strong><span>Elegant essentials and statement pieces</span></div>
+      <div><strong>Responsive design</strong><span>Built for desktop, tablet and mobile</span></div>
+      <div><strong>Transparent pricing</strong><span>Prices referenced Sep 19, 2026</span></div>
     </section>
 
     <section class="section" id="new">
       <div class="section-head">
-        <div><p class="eyebrow">THE AVMD EDIT</p><h2>Featured collection</h2></div>
+        <div>
+          <p class="eyebrow">THE AVMD EDIT</p>
+          <h2>Featured collection</h2>
+        </div>
         <div class="filters">
           <button class="filter active" data-filter="All">All</button>
           <button class="filter" data-filter="Men">Men</button>
@@ -52,33 +63,41 @@
     </section>
 
     <section class="split-banner" id="men">
-      <div class="banner-img men-img"><img src="https://unsplash.com/photos/v6771a4avV4/download?force=true&w=1300" alt="Men's tailoring" onerror="this.style.display='none'"></div>
-      <div class="banner-copy"><p class="eyebrow">MEN</p><h2>Tailoring with ease.</h2><p>Clean lines, considered layers and modern classics for work, evenings and everything between.</p><button class="jump" data-jump="Men">Explore men</button></div>
+      <div class="banner-img"><img src="assets/men_shirt.png" alt="Men's fashion"></div>
+      <div class="banner-copy"><p class="eyebrow">MEN</p><h2>Tailoring with ease.</h2><p>Clean lines, considered layers and modern classics for work, evenings and refined everyday wear.</p><button class="jump" data-jump="Men">Explore men</button></div>
     </section>
 
     <section class="split-banner reverse" id="women">
-      <div class="banner-img women-img"><img src="https://images.unsplash.com/photo-1606776627650-454d6d7bd7bf?w=1300" alt="Women's tailoring" onerror="this.style.display='none'"></div>
-      <div class="banner-copy"><p class="eyebrow">WOMEN</p><h2>Soft structure.</h2><p>Tailored jackets and fluid dresses selected for a polished, confident wardrobe.</p><button class="jump" data-jump="Women">Explore women</button></div>
+      <div class="banner-img"><img src="assets/women_blazer.png" alt="Women's fashion"></div>
+      <div class="banner-copy"><p class="eyebrow">WOMEN</p><h2>Soft structure.</h2><p>Tailored jackets and elegant dresses selected for a polished, confident wardrobe.</p><button class="jump" data-jump="Women">Explore women</button></div>
     </section>
 
     <section class="footwear-callout" id="footwear">
-      <p class="eyebrow">FOOTWEAR</p><h2>Finish the look.</h2><p>From polished leather loafers to iconic low-profile sneakers.</p>
+      <p class="eyebrow">FOOTWEAR</p><h2>Finish the look.</h2><p>From polished leather loafers to timeless wardrobe staples.</p>
       <button class="jump light" data-jump="Footwear">Shop footwear</button>
     </section>
 
     <section class="about" id="about">
-      <img src="assets/avmd-logo.png" alt="AVMD-FRANCE">
-      <div><p class="eyebrow">THE MAISON</p><h2>AVMD-FRANCE</h2><p>AVMD-FRANCE is conceived as a modern online boutique built around timeless silhouettes, refined neutrals and pieces that transition effortlessly from day to night.</p><p class="fine">This is a storefront demo. Product names and displayed prices reference retailer listings available when researched on September 19, 2026. Editorial photographs are real fashion photographs used for presentation and may not depict the exact retailer SKU. Prices, colors and availability can change; use “View source” on each item for the retailer listing.</p></div>
+      <img src="assets/avmd-logo.png" alt="AVMD-FRANCE logo">
+      <div>
+        <p class="eyebrow">THE MAISON</p>
+        <h2>AVMD-FRANCE</h2>
+        <p>AVMD-FRANCE is a modern online boutique built around timeless silhouettes, elegant neutrals and pieces that move effortlessly from day to night.</p>
+        <p class="fine">This is a storefront demo. Product names and displayed prices reference retailer listings available when researched on September 19, 2026. The photographs included are stored locally in the ZIP so the page loads correctly on GitHub Pages. Use “View source” on each item for the source link.</p>
+      </div>
     </section>
   </main>
 
-  <footer><div><b>AVMD-FRANCE</b><span>Timeless Elegance. Modern Fashion.</span></div><div><span>Miami, Florida, United States</span><span>© 2026 AVMD-FRANCE</span></div></footer>
+  <footer>
+    <div><b>AVMD-FRANCE</b><span>Timeless Elegance. Modern Fashion.</span></div>
+    <div><span>Miami, Florida, United States</span><span>© 2026 AVMD-FRANCE</span></div>
+  </footer>
 
   <dialog id="searchDialog"><form method="dialog"><button class="close">×</button><label>Search the collection<input id="searchInput" placeholder="Blazer, dress, loafer…"></label><div id="searchResults"></div></form></dialog>
-
   <aside id="cart" aria-hidden="true"><div class="cart-head"><h3>Your bag</h3><button id="closeCart">×</button></div><div id="cartItems"></div><div class="cart-foot"><div><span>Subtotal</span><b id="subtotal">$0.00</b></div><button>Checkout demo</button><small>Demo cart — payment is not connected.</small></div></aside>
   <div id="overlay"></div>
 
   <script src="data.js"></script>
   <script src="app.js"></script>
-</body></html>
+</body>
+</html>
