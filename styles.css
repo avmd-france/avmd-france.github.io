@@ -33,3 +33,18 @@ dialog{border:0;width:min(720px,90vw);padding:0;box-shadow:0 30px 80px #0003}dia
 .contact-card p:last-child{color:var(--muted);font-size:10px;margin:8px 0 0}
 @media(max-width:980px){.contact{grid-template-columns:1fr;padding:70px 24px}nav{gap:16px}}
 @media(max-width:600px){.brand img{width:120px}.contact-cards{grid-template-columns:1fr}.contact-card{min-height:220px}.announcement{font-size:8px;letter-spacing:.08em}}
+
+
+/* V4 header/order fix */
+
+header{height:84px;grid-template-columns:230px 1fr 150px;padding:0 26px;gap:18px;overflow:hidden}
+.brand{width:230px;display:flex;align-items:center;justify-content:flex-start}
+.brand img{width:155px !important;max-width:100%;height:auto;display:block;object-fit:contain}
+nav{justify-self:center;align-self:center;display:flex;gap:26px;flex-wrap:nowrap}
+nav a{font-size:11px;white-space:nowrap;line-height:1}
+.tools{justify-self:end;align-self:center}
+.hero{min-height:620px}
+.hero-copy{padding:9vh 6vw}
+@media(max-width:1100px){header{grid-template-columns:180px 1fr 120px;padding:0 18px}.brand{width:180px}.brand img{width:128px !important}nav{gap:16px}nav a{font-size:10px}}
+@media(max-width:980px){header{grid-template-columns:160px 1fr;gap:8px;height:78px}.brand{width:160px}.brand img{width:118px !important}.tools{justify-self:end}nav{display:none}}
+@media(max-width:600px){header{height:72px;padding:0 14px}.brand{width:120px}.brand img{width:98px !important}.tools button{padding:8px}}
