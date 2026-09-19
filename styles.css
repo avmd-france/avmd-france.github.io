@@ -17,3 +17,19 @@ dialog{border:0;width:min(720px,90vw);padding:0;box-shadow:0 30px 80px #0003}dia
 #cart{position:fixed;z-index:50;right:-430px;top:0;width:min(430px,100vw);height:100vh;background:white;transition:.3s;display:flex;flex-direction:column;box-shadow:-20px 0 60px #0002}#cart.open{right:0}.cart-head{height:82px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 25px}.cart-head h3{font-family:"Playfair Display",serif;font-size:28px}.cart-head button{border:0;background:none;font-size:26px}.cart-item{padding:17px 25px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;font-size:12px}.cart-item b{font-family:"Playfair Display",serif;font-size:15px}.cart-item button{border:0;background:none;text-decoration:underline;font-size:10px}.cart-foot{margin-top:auto;border-top:1px solid var(--line);padding:24px}.cart-foot>div{display:flex;justify-content:space-between}.cart-foot>button{width:100%;padding:15px;margin:18px 0 8px;background:var(--ink);color:white;border:0;text-transform:uppercase;letter-spacing:.13em}.cart-foot small{color:var(--muted)}#overlay{position:fixed;inset:0;background:#0007;z-index:40;opacity:0;pointer-events:none;transition:.2s}#overlay.show{opacity:1;pointer-events:auto}
 @media(max-width:980px){header{grid-template-columns:1fr auto}nav{display:none}.product-grid{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr;min-height:auto}.hero-copy{min-height:570px}.hero-art{min-height:560px}.split-banner,.split-banner.reverse{grid-template-columns:1fr}.split-banner .banner-img,.split-banner.reverse .banner-img{order:1;min-height:560px}.split-banner .banner-copy,.split-banner.reverse .banner-copy{order:2}.about{grid-template-columns:1fr}.about img{max-width:280px}.trust{grid-template-columns:1fr}}
 @media(max-width:600px){header{padding:0 18px}.brand img{width:110px}.hero-copy{padding:80px 24px;min-height:520px}.hero h1{font-size:54px}.section{padding:65px 18px}.section-head{align-items:flex-start;gap:24px;flex-direction:column}.product-grid{grid-template-columns:1fr 1fr;gap:26px 9px}.media{height:280px}.name{font-size:15px}.split-banner .banner-img,.split-banner.reverse .banner-img{min-height:480px}.banner-copy{padding:70px 24px}.trust{padding:28px 20px}.about{padding:70px 24px}.footwear-callout{padding:80px 24px}footer{flex-direction:column;gap:25px}}
+
+/* V3: stronger brand sizing and support/advice cards */
+.brand img{width:188px;max-width:100%;height:auto;display:block}
+.contact{background:#f7f3ec;padding:86px 4.5vw;display:grid;grid-template-columns:40% 60%;gap:28px;align-items:center}
+.contact-intro h2{font-family:"Playfair Display",serif;font-weight:600;font-size:clamp(36px,4vw,55px);line-height:1.12;margin:0 0 18px}
+.contact-intro>p:not(.eyebrow){color:var(--muted);line-height:1.7;max-width:390px}
+.contact-cards{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.contact-card{padding:30px 22px;background:white;border:1px solid #e5dccf;min-height:252px;display:flex;flex-direction:column;align-items:flex-start}
+.contact-card .eyebrow{font-size:9px;color:var(--muted);margin:18px 0 7px}
+.contact-card h3{font-family:"Playfair Display",serif;font-size:21px;line-height:1.2;font-weight:600;margin:0 0 15px}
+.contact-number{font-size:18px;font-weight:700;letter-spacing:.01em;color:var(--ink);text-decoration:none;margin-top:auto}
+.contact-number.is-demo{cursor:default}
+.contact-symbol{color:#b39259;font-size:29px;line-height:1}
+.contact-card p:last-child{color:var(--muted);font-size:10px;margin:8px 0 0}
+@media(max-width:980px){.contact{grid-template-columns:1fr;padding:70px 24px}nav{gap:16px}}
+@media(max-width:600px){.brand img{width:120px}.contact-cards{grid-template-columns:1fr}.contact-card{min-height:220px}.announcement{font-size:8px;letter-spacing:.08em}}

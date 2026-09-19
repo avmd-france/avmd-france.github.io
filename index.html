@@ -8,18 +8,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico?v=3">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=3">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=3">
+  <meta name="theme-color" content="#141310">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
-  <div class="announcement">COMPLIMENTARY SHIPPING ON ORDERS OVER $150 <span>•</span> NEW SEASON EDIT</div>
+  <div class="announcement">AVMD-FRANCE <span>•</span> NEW SEASON EDIT <span>•</span> DISCOVER YOUR STYLE</div>
   <header>
-    <a class="brand" href="#top"><img src="assets/avmd-logo.png" alt="AVMD-FRANCE logo"></a>
+    <a class="brand" href="#top" aria-label="AVMD-FRANCE home"><img src="assets/avmd-logo.png" alt="AVMD-FRANCE logo"></a>
     <nav>
       <a href="#new">New</a>
       <a href="#men">Men</a>
       <a href="#women">Women</a>
       <a href="#footwear">Footwear</a>
-      <a href="#about">Maison</a>
+      <a href="#about">Maison</a><a href="#contact">Contact</a>
     </nav>
     <div class="tools">
       <button id="searchBtn" aria-label="Search">⌕</button>
@@ -77,6 +81,14 @@
       <button class="jump light" data-jump="Footwear">Shop footwear</button>
     </section>
 
+    <section class="contact" id="contact">
+      <div class="contact-intro"><p class="eyebrow">WE ARE HERE FOR YOU</p><h2>How can we help?</h2><p>Contact our team for order questions or personal styling assistance.</p></div>
+      <div class="contact-cards">
+        <div class="contact-card"><span class="contact-symbol">✦</span><p class="eyebrow">CUSTOMER SUPPORT</p><h3>Questions about your order?</h3><a class="contact-number" id="supportPhone" href="#contact">+1 (202) 555-0146</a><p id="supportHint">Example number — replace before launch</p></div>
+        <div class="contact-card"><span class="contact-symbol">✧</span><p class="eyebrow">PERSONAL STYLE ADVICE</p><h3>Find your signature look.</h3><a class="contact-number" id="advicePhone" href="#contact">+1 (202) 555-0178</a><p id="adviceHint">Example number — replace before launch</p></div>
+      </div>
+    </section>
+
     <section class="about" id="about">
       <img src="assets/avmd-logo.png" alt="AVMD-FRANCE logo">
       <div>
@@ -90,14 +102,15 @@
 
   <footer>
     <div><b>AVMD-FRANCE</b><span>Timeless Elegance. Modern Fashion.</span></div>
-    <div><span>Miami, Florida, United States</span><span>© 2026 AVMD-FRANCE</span></div>
+    <div><span>Customer support: <span id="footerSupport">+1 (202) 555-0146 (example)</span></span><span>Style advice: <span id="footerAdvice">+1 (202) 555-0178 (example)</span></span><span>© 2026 AVMD-FRANCE</span></div>
   </footer>
 
   <dialog id="searchDialog"><form method="dialog"><button class="close">×</button><label>Search the collection<input id="searchInput" placeholder="Blazer, dress, loafer…"></label><div id="searchResults"></div></form></dialog>
   <aside id="cart" aria-hidden="true"><div class="cart-head"><h3>Your bag</h3><button id="closeCart">×</button></div><div id="cartItems"></div><div class="cart-foot"><div><span>Subtotal</span><b id="subtotal">$0.00</b></div><button>Checkout demo</button><small>Demo cart — payment is not connected.</small></div></aside>
   <div id="overlay"></div>
 
-  <script src="data.js"></script>
-  <script src="app.js"></script>
+  <script src="config.js?v=3"></script>
+  <script src="data.js?v=3"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>
